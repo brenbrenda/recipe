@@ -13,6 +13,7 @@
 		C248731425F7D2460017A7E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C248731225F7D2460017A7E0 /* Main.storyboard */; };
 		C248731625F7D2490017A7E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C248731525F7D2490017A7E0 /* Assets.xcassets */; };
 		C248731925F7D2490017A7E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C248731725F7D2490017A7E0 /* LaunchScreen.storyboard */; };
+		C248732525F876BF0017A7E0 /* recipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C248732425F876BF0017A7E0 /* recipeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		C248731525F7D2490017A7E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C248731825F7D2490017A7E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C248731A25F7D2490017A7E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C248732425F876BF0017A7E0 /* recipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = recipeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				C248730C25F7D2460017A7E0 /* AppDelegate.swift */,
 				C248730E25F7D2460017A7E0 /* SceneDelegate.swift */,
 				C248731025F7D2460017A7E0 /* ViewController.swift */,
+				C248732425F876BF0017A7E0 /* recipeViewController.swift */,
 				C248731225F7D2460017A7E0 /* Main.storyboard */,
 				C248731525F7D2490017A7E0 /* Assets.xcassets */,
 				C248731725F7D2490017A7E0 /* LaunchScreen.storyboard */,
@@ -140,6 +143,7 @@
 				C248731125F7D2460017A7E0 /* ViewController.swift in Sources */,
 				C248730D25F7D2460017A7E0 /* AppDelegate.swift in Sources */,
 				C248730F25F7D2460017A7E0 /* SceneDelegate.swift in Sources */,
+				C248732525F876BF0017A7E0 /* recipeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
