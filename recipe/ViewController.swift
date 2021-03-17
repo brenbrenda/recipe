@@ -19,6 +19,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         effect = visualEffectView.effect
         visualEffectView.effect = nil
+        visualEffectView.isHidden = true
         //addListView.layer.cornerRadius = 10
        
         super.viewDidLoad()
@@ -55,6 +56,7 @@ class ViewController: UIViewController {
         addListView.transform = CGAffineTransform.init(scaleX: 2, y: 2)
         addListView.alpha = 0
         UIView.animate(withDuration: 0.3) {
+            
             self.visualEffectView.effect = self.effect
             self.addListView.alpha = 1 //alpha是不透明度（不透明）
             self.addListView.transform = CGAffineTransform.identity
@@ -70,10 +72,12 @@ class ViewController: UIViewController {
         }
     }
     @IBAction func addList(_ sender: Any) {
+        visualEffectView.isHidden = false
         animatedIn()
     }
     @IBAction func dissmissPopup(_ sender: Any) {
         animatedOut()
+        visualEffectView.isHidden = true
     }
 }
 extension ViewController: UIScrollViewDelegate {

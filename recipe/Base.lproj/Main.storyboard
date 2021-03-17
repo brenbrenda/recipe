@@ -61,7 +61,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sJi-LH-DFb">
                                 <rect key="frame" x="80" y="180" width="250" height="500"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <mutableString key="text">2 cups all-purpose flour  2 tablespoons baking powder 
+                                <string key="text">2 cups all-purpose flour  2 tablespoons baking powder 
 1 tablespoon white sugar 
 ¼ teaspoon salt 
 1 cup vanilla-flavored almond milk 
@@ -70,7 +70,7 @@
 1 lemon, zested and juiced 
 1 teaspoon almond extract 
 1 tablespoon unsalted butter, melted 
-1 cup blueberries</mutableString>
+1 cup blueberries</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -221,7 +221,7 @@
                                     <segment title="dinner"/>
                                 </segments>
                                 <connections>
-                                    <action selector="mySegmentedAction:" destination="vVc-Gp-BFo" eventType="valueChanged" id="CTj-cP-c8N"/>
+                                    <action selector="mySegmentedAction:" destination="vVc-Gp-BFo" eventType="valueChanged" id="zTd-yz-fHa"/>
                                 </connections>
                             </segmentedControl>
                             <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="d2h-WG-ZkJ">
@@ -244,14 +244,7 @@
                             <constraint firstItem="D5g-JN-0cT" firstAttribute="centerX" secondItem="NhA-cJ-Lmg" secondAttribute="centerX" id="fsX-hT-R4T"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Recipe" id="odR-TZ-YhB">
-                        <barButtonItem key="leftBarButtonItem" style="plain" id="bed-xc-Dyi">
-                            <progressView key="customView" opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" progress="0.5" id="ePc-dg-Fgl">
-                                <rect key="frame" x="20" y="21" width="92" height="2.5"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </progressView>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Recipe" id="odR-TZ-YhB"/>
                     <connections>
                         <outlet property="Reload" destination="D5g-JN-0cT" id="dZv-73-Gge"/>
                         <outlet property="myRecipe" destination="d2h-WG-ZkJ" id="PZZ-Zo-uEr"/>

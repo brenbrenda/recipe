@@ -16,6 +16,8 @@ class recipeViewController: UIViewController {
     let Str2 = "https://www.allrecipes.com/recipe/279909/broiled-paprika-and-lemon-pepper-chicken-breasts/"
     let Str3 = "https://www.allrecipes.com/gallery/fancy-casseroles/"
    
+    
+    
     @IBAction func mySegmentedAction(_ sender: UISegmentedControl) {
         
         if sender.selectedSegmentIndex == 0 {
