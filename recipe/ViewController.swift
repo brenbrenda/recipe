@@ -36,9 +36,6 @@ class ViewController: UIViewController {
             view.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
         }
     }
-    
-    
- 
 
     @IBOutlet weak var labell: UILabel!
     var fontSize: Float = 0.0
@@ -47,9 +44,10 @@ class ViewController: UIViewController {
         labell.font = UIFont(name: labell.font.fontName, size: senderValue)
     }
     @IBAction func changePage(_ sender: UIPageControl) {
-        let point = CGPoint(x: scrollView.bounds.width * CGFloat(sender.currentPage), y :0)
+        let point = CGPoint(x: scrollView.bounds.width * CGFloat(sender.currentPage), y:0)
         scrollView.setContentOffset(point, animated: true)
     }
+
     func animatedIn() {
         self.view.addSubview(addListView)
         addListView.center = self.view.center
@@ -62,6 +60,7 @@ class ViewController: UIViewController {
             self.addListView.transform = CGAffineTransform.identity
         }
     }
+    
     func animatedOut() {
         UIView.animate(withDuration: 0.3, animations: {
             self.addListView.transform = CGAffineTransform.init(scaleX: 2, y: 2)
@@ -71,6 +70,7 @@ class ViewController: UIViewController {
             self.addListView.removeFromSuperview()
         }
     }
+    
     @IBAction func addList(_ sender: Any) {
         visualEffectView.isHidden = false
         animatedIn()
